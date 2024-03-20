@@ -27,8 +27,8 @@ class productSimpleDetails extends StatelessWidget {
           ),
         ),
         Container(
-          height: 100,
-          width: 50,
+          height: 150,
+          width: 100,
           decoration: BoxDecoration(
               image: DecorationImage(
                   image: NetworkImage(
@@ -76,12 +76,18 @@ class productSimpleDetails extends StatelessWidget {
             ),
           ],
         ),
+        SizedBox(
+          height: 5,
+        ),
         Align(
           alignment: Alignment.topLeft,
           child: Text(
             "Red Label Tea",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
           ),
+        ),
+        SizedBox(
+          height: 15,
         ),
         Row(
           children: [
@@ -91,7 +97,13 @@ class productSimpleDetails extends StatelessWidget {
                   color: Colors.teal, borderRadius: BorderRadius.circular(6)),
               child: Row(
                 children: [
-                  Text(" 4.2 "),
+                  Text(
+                    " 4.2 ",
+                    style: TextStyle(color: ColorConstant.primarywhite),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
                   Icon(
                     Icons.star,
                     color: ColorConstant.primarywhite,
@@ -99,8 +111,19 @@ class productSimpleDetails extends StatelessWidget {
                 ],
               ),
             ),
-            Text(" 96 ratings "),
+            SizedBox(
+              width: 10,
+            ),
+            Text(
+              " 96 ratings ",
+              style: TextStyle(
+                  color: ColorConstant.primaryblack.withOpacity(.4),
+                  fontWeight: FontWeight.bold),
+            ),
           ],
+        ),
+        SizedBox(
+          height: 10,
         ),
         Row(
           children: [

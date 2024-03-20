@@ -60,7 +60,7 @@ class ProductDetails extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 11),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.grey.shade300),
@@ -69,9 +69,24 @@ class ProductDetails extends StatelessWidget {
                     color: ColorConstant.primarygreen,
                   ),
                 ),
+                SizedBox(
+                  width: 10,
+                ),
                 Container(
-                  
-                )
+                  height: 60,
+                  width: 325,
+                  decoration: BoxDecoration(
+                      color: Colors.teal,
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Center(
+                    child: Text(
+                      "ADD TO CART",
+                      style: TextStyle(
+                          color: ColorConstant.primarywhite,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
               ],
             )
           ],
